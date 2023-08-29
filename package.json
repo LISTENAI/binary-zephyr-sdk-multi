@@ -1,0 +1,35 @@
+{
+  "name": "@binary/zephyr-sdk-multi",
+  "version": "2023.08.01",
+  "description": "zephyr-sdk multiple verion package",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry-lpm.listenai.com"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "install": "node lib/install.js"
+  },
+  "author": "zbzhao <zbzhao@listenai.com>",
+  "maintainers": [
+    "lpmadmin <lpm.admin@listenai.com>",
+    "xychen <xychen@listenai.com>",
+    "zbzhao <zbzhao@listenai.com>",
+    "ywang <wangyang2@listenai.com>"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@binary/type": "^1.0.4",
+    "@xingrz/download2": "^9.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.1",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
