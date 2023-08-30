@@ -15,6 +15,6 @@ export default <Binary>{
   async version() {
     //const { stdout } = await execFile(join(this.binaryDir, 'arm-zephyr-eabi-gcc'), ['--version']);
     //return stdout.split('\n')[0].trim();
-    return "0.14.1/0.16.2";
+    return "0.14.1/0.16.2-2023.8.2";
   }
 };

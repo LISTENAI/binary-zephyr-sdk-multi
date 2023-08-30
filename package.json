@@ -1,6 +1,6 @@
 {
   "name": "@binary/zephyr-sdk-multi",
-  "version": "2023.08.01",
+  "version": "2023.8.2",
   "description": "zephyr-sdk multiple verion package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
